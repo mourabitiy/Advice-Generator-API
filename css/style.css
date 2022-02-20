@@ -1,0 +1,98 @@
+    @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&family=Outfit:wght@400;700&display=swap');
+     :root {
+        --LightCyan: hsl(193, 38%, 86%);
+        --NeonGreen: hsl(150, 100%, 66%);
+        --GrayishBlue: hsl(217, 19%, 38%);
+        --DarkGrayishBlue: hsl(217, 19%, 24%);
+        --fontWeight: 800;
+    }
+    
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+    
+    body {
+        background-color: hsl(219, 21%, 16%);
+        font-family: 'Manrope', sans-serif;
+    }
+    
+    .container {
+        margin: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 3em;
+        border-radius: 18px;
+        text-align: center;
+        background-color: var(--DarkGrayishBlue);
+        display: none;
+    }
+    
+    .container h3 {
+        color: var(--NeonGreen);
+        font-size: .8em;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+    }
+    
+    .main-text {
+        color: var(--LightCyan);
+        font-weight: var(--fontWeight);
+        font-size: 1.5em;
+    }
+    
+    .separator {
+        margin-bottom: 30px;
+    }
+    
+    .random {
+        background-color: var(--NeonGreen);
+        margin-top: 20px;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: -80px;
+    }
+    
+    .random-img {
+        position: relative;
+        top: 50%;
+        left: 20%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .random:hover {
+        background: hsl(148, 100%, 62%);
+        box-shadow: 0 0 50px hsl(148, 93%, 61%);
+        cursor: pointer;
+    }
+    
+    .random:active {
+        animation: shake 1s ease 1;
+        -webkit-animation: shake 1s ease 1;
+        transition: 1s ease-in-out;
+        -webkit-transition: 1s ease-in-out;
+        -moz-transition: 1s ease-in-out;
+        -ms-transition: 1s ease-in-out;
+        -o-transition: 1s ease-in-out;
+    }
+    
+    @keyframes shake {
+        25% {
+            transform: scale(.7);
+        }
+        50% {
+            transform: scale(.6);
+        }
+        75% {
+            transform: scale(.5);
+        }
+        100% {
+            transform: scale(.8);
+        }
+    }
