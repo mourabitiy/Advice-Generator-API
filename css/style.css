@@ -29,6 +29,7 @@
         text-align: center;
         background-color: var(--DarkGrayishBlue);
         display: none;
+        max-width: 70%;
     }
     
     .container h3 {
@@ -46,6 +47,7 @@
     
     .separator {
         margin-bottom: 30px;
+        max-width: 100%;
     }
     
     .random {
